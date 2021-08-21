@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+	
+	float calif[20]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+	float sum, promedio, var, des;
+	int i=0, u=0;
+	
+	printf("Calculo de desviacion estandar y varianza\n");
+	
+	for(i=0; i<20; i++);{
+	sum=sum+calif[i];
+	promedio=sum/20;
+	
+	}
+	u=i;
+ for(u = 0; u < 20; u++){
+		
+		var+=pow(calif[u]-promedio, 2);
+		
+	}
+	
+
+     des=pow(var/20,0.5);
+     
+     printf("Varianza: %.2f\n", var/20);
+     printf("Desviacion estandar: %.2f", des);
+     return 0;
+     
+     
+	 }
